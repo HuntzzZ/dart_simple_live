@@ -21,7 +21,7 @@ jobs:
           ref: dev
           lfs: true
           token: ${{ secrets.MY_PAT }}
-
+          
       # APK签名设置
       - name: Download Android keystore
         id: android_keystore
