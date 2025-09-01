@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: dev
+          lfs: true
+          token: ${{ secrets.MY_PAT }}
 
       # APK签名设置
       - name: Download Android keystore
